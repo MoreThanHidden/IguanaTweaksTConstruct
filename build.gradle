@@ -77,10 +77,9 @@ if (configFile2.exists()){
 }
 
 dependencies {
-    compile "tconstruct:TConstruct:${config.minecraft_version}-${config.tconstruct_version}:deobf"
-    compile "codechicken:ForgeMultipart:${config.minecraft_version}-${config.fmp_version}:dev"
-    //compile name: 'CodeChickenLib', version: "${config.minecraft_version}-${config.CCLIB_version}", ext: 'jar'
-    //compile name: 'NotEnoughItems', version: "${config.NEI_version}", type: 'jar'
+	deobfCompile "slimeknights.mantle:Mantle:${config.minecraft_version}-${config.mantle_version}"
+    deobfCompile "mezz.jei:jei_${config.minecraft_version}:${config.jei_version}"
+    deobfCompile "slimeknights:TConstruct:${config.minecraft_version}-${config.tconstruct_version}"
 }
 
 // Finds and sets version data
@@ -115,6 +114,7 @@ version = "${config.minecraft_version}-${artifact_version}"
 
 minecraft {
     version = config.minecraft_version + "-" + config.forge_version
+	mappings = config.mappings
     runDir = 'run'
     replace '${version}', project.version
 }
