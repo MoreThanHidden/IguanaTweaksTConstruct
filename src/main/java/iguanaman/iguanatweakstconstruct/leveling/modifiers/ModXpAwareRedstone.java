@@ -3,7 +3,7 @@ package iguanaman.iguanatweakstconstruct.leveling.modifiers;
 import iguanaman.iguanatweakstconstruct.leveling.LevelingLogic;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import tconstruct.modifiers.tools.ModRedstone;
+import slimeknights.tconstruct.modifiers.tools.ModRedstone;
 
 import java.util.List;
 

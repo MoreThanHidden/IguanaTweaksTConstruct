@@ -1,6 +1,6 @@
 package iguanaman.iguanatweakstconstruct.override;
 
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import iguanaman.iguanatweakstconstruct.reference.Config;
 import iguanaman.iguanatweakstconstruct.util.HarvestLevels;
 import iguanaman.iguanatweakstconstruct.util.Log;
@@ -9,8 +9,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.ConfigCategory;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.tools.ToolMaterial;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.library.tools.ToolMaterial;
 
 import java.util.HashMap;
 import java.util.Map;

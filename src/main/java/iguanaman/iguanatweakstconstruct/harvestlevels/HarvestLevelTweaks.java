@@ -1,7 +1,7 @@
 package iguanaman.iguanatweakstconstruct.harvestlevels;
 
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.LoaderState;
+import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.fml.common.LoaderState;
 import iguanaman.iguanatweakstconstruct.reference.Config;
 import iguanaman.iguanatweakstconstruct.util.HarvestLevels;
 import iguanaman.iguanatweakstconstruct.util.Log;
@@ -12,7 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.oredict.OreDictionary;
-import tconstruct.world.blocks.GravelOre;
+import slimeknights.tconstruct.world.blocks.GravelOre;
 
 import java.lang.reflect.Field;
 import java.util.LinkedList;

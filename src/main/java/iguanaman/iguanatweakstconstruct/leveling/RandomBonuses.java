@@ -12,15 +12,15 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
-import tconstruct.TConstruct;
-import tconstruct.items.tools.Hammer;
-import tconstruct.library.crafting.ModifyBuilder;
-import tconstruct.library.modifier.ItemModifier;
-import tconstruct.library.tools.ToolCore;
-import tconstruct.library.weaponry.IAmmo;
-import tconstruct.modifiers.tools.ModWindup;
-import tconstruct.tools.TinkerTools;
-import tconstruct.weaponry.TinkerWeaponry;
+import slimeknights.tconstruct.TConstruct;
+import slimeknights.tconstruct.items.tools.Hammer;
+import slimeknights.tconstruct.library.crafting.ModifyBuilder;
+import slimeknights.tconstruct.library.modifier.ItemModifier;
+import slimeknights.tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.library.weaponry.IAmmo;
+import slimeknights.tconstruct.modifiers.tools.ModWindup;
+import slimeknights.tconstruct.tools.TinkerTools;
+import slimeknights.tconstruct.weaponry.TinkerWeaponry;
 
 import java.util.*;
 

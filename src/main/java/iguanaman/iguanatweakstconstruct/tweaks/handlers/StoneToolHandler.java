@@ -1,23 +1,23 @@
 package iguanaman.iguanatweakstconstruct.tweaks.handlers;
 
-import cpw.mods.fml.common.eventhandler.Event;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.eventhandler.EventPriority;
+import net.minecraftforge.fml.common.eventhandler.Event;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.event.ToolCraftEvent;
-import tconstruct.library.tools.ToolMaterial;
-import tconstruct.library.util.IToolPart;
-import tconstruct.tools.TinkerTools;
-import tconstruct.weaponry.TinkerWeaponry;
-import tconstruct.weaponry.ammo.ArrowAmmo;
-import tconstruct.weaponry.ammo.BoltAmmo;
-import tconstruct.weaponry.weapons.Crossbow;
-import tconstruct.weaponry.weapons.LongBow;
-import tconstruct.weaponry.weapons.ShortBow;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.library.event.ToolCraftEvent;
+import slimeknights.tconstruct.library.tools.ToolMaterial;
+import slimeknights.tconstruct.library.util.IToolPart;
+import slimeknights.tconstruct.tools.TinkerTools;
+import slimeknights.tconstruct.weaponry.TinkerWeaponry;
+import slimeknights.tconstruct.weaponry.ammo.ArrowAmmo;
+import slimeknights.tconstruct.weaponry.ammo.BoltAmmo;
+import slimeknights.tconstruct.weaponry.weapons.Crossbow;
+import slimeknights.tconstruct.weaponry.weapons.LongBow;
+import slimeknights.tconstruct.weaponry.weapons.ShortBow;
 
 public class StoneToolHandler {
     // we can initialize this statically, because it wont be initialized until PostInit, where all materials are already registered

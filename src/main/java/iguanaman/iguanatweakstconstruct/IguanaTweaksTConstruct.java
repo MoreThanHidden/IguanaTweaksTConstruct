@@ -1,19 +1,12 @@
 package iguanaman.iguanatweakstconstruct;
 
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.*;
-import cpw.mods.fml.common.registry.GameRegistry;
+
 import iguanaman.iguanatweakstconstruct.claybuckets.IguanaItems;
 import iguanaman.iguanatweakstconstruct.commands.CommandDumpOredict;
+import iguanaman.iguanatweakstconstruct.commands.CommandDumpTools;
 import iguanaman.iguanatweakstconstruct.commands.CommandIAmADirtyCheater;
 import iguanaman.iguanatweakstconstruct.debug.DebugCommand;
 import iguanaman.iguanatweakstconstruct.debug.IguanaDebug;
-import iguanaman.iguanatweakstconstruct.harvestlevels.HarvestLevelTweaks;
 import iguanaman.iguanatweakstconstruct.harvestlevels.IguanaHarvestLevelTweaks;
 import iguanaman.iguanatweakstconstruct.leveling.IguanaToolLeveling;
 import iguanaman.iguanatweakstconstruct.leveling.commands.IguanaCommandLevelUpTool;
@@ -26,19 +19,20 @@ import iguanaman.iguanatweakstconstruct.reference.Config;
 import iguanaman.iguanatweakstconstruct.reference.Reference;
 import iguanaman.iguanatweakstconstruct.replacing.IguanaToolPartReplacing;
 import iguanaman.iguanatweakstconstruct.restriction.IguanaPartRestriction;
-import iguanaman.iguanatweakstconstruct.commands.CommandDumpTools;
 import iguanaman.iguanatweakstconstruct.tweaks.IguanaTweaks;
 import iguanaman.iguanatweakstconstruct.util.HarvestLevels;
 import iguanaman.iguanatweakstconstruct.util.Log;
 import iguanaman.iguanatweakstconstruct.worldgen.IguanaWorldGen;
-import mantle.pulsar.config.IConfiguration;
-import mantle.pulsar.control.PulseManager;
-import mantle.pulsar.pulse.PulseMeta;
-import net.minecraft.item.Item;
-import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.*;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import slimeknights.mantle.pulsar.config.IConfiguration;
+import slimeknights.mantle.pulsar.control.PulseManager;
+import slimeknights.mantle.pulsar.pulse.PulseMeta;
 
 import java.io.File;
-import java.util.List;
 import java.util.Random;
 
 @Mod(modid= Reference.MOD_ID, name= Reference.MOD_NAME, version="${version}",
@@ -46,7 +40,7 @@ dependencies = "required-after:" + Reference.TCON_MOD_ID + "@[1.7.10-1.8.3,);aft
 public class IguanaTweaksTConstruct {
 
 	// The instance of your mod that Forge uses.
-	@Instance(Reference.MOD_ID)
+	@Mod.Instance(Reference.MOD_ID)
 	public static IguanaTweaksTConstruct instance;
 
 	// Says where the client and server 'proxy' code is loaded.
@@ -61,7 +55,7 @@ public class IguanaTweaksTConstruct {
 
     public static File configPath;
 
-	@EventHandler
+	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
         Log.init(event.getModLog());
         configPath = new File(event.getModConfigurationDirectory(), "IguanaTinkerTweaks");
@@ -75,7 +69,7 @@ public class IguanaTweaksTConstruct {
         // init pulse manager
         pulseCFG = new PulsarCFG(Reference.configFile("Modules.cfg"), "Tinker's Construct Addon: Iguana Tweaks for Tinkers Construct");
         pulseCFG.load();
-        pulsar = new PulseManager(Reference.MOD_ID, pulseCFG);
+        pulsar = new PulseManager(pulseCFG);
 
         Config config = new Config();
         config.init(Reference.configFile("main.cfg"));
@@ -107,21 +101,21 @@ public class IguanaTweaksTConstruct {
         HarvestLevels.updateHarvestLevelNames();
 
         // start up the pulses
-        pulsar.preInit(event);
+        //pulsar.preInit(event);
 
         // versionchecker support
         FMLInterModComms.sendRuntimeMessage(Reference.MOD_ID, "VersionChecker", "addVersionCheck", "https://raw.githubusercontent.com/SlimeKnights/IguanaTweaksTConstruct/master/version.json");
 	}
 
 
-	@EventHandler
-	public void load(FMLInitializationEvent event) {
-        pulsar.init(event);
-	}
+	//@Mod.EventHandler
+	//public void load(FMLInitializationEvent event) {
+    //    pulsar.init(event);
+	//}
 
-	@EventHandler
+	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-        pulsar.postInit(event);
+        //pulsar.postInit(event);
 
         FMLCommonHandler.instance().bus().register(new OldToolConversionHandler());
             FMLCommonHandler.instance().bus().register(new AntiChiselDupeHandler());
@@ -129,7 +123,7 @@ public class IguanaTweaksTConstruct {
         GameRegistry.addRecipe(new ToolUpdateRecipe());
 	}
 
-	@EventHandler
+	@Mod.EventHandler
 	public void serverStarting(FMLServerStartingEvent event)
 	{
 		if (pulsar.isPulseLoaded(Reference.PULSE_LEVELING))
@@ -146,7 +140,7 @@ public class IguanaTweaksTConstruct {
         Log.debug("Adding command: dumpOredict");
         event.registerServerCommand(new CommandDumpOredict());
 
-        if(pulseCFG.isModuleEnabled(new PulseMeta("Debug", "", false, false)))
+        if(pulseCFG.isModuleEnabled(new PulseMeta("Debug", "", false, false, false)))
             event.registerServerCommand(new DebugCommand());
 	}
 

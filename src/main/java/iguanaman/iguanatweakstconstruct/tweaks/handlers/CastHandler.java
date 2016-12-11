@@ -1,8 +1,8 @@
 package iguanaman.iguanatweakstconstruct.tweaks.handlers;
 
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import tconstruct.library.event.SmelteryCastedEvent;
-import tconstruct.library.util.IPattern;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import slimeknights.tconstruct.library.event.SmelteryCastedEvent;
+import slimeknights.tconstruct.library.util.IPattern;
 
 public class CastHandler {
     @SubscribeEvent

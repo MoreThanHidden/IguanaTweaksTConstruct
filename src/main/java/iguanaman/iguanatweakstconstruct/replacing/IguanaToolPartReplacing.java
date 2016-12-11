@@ -1,13 +1,13 @@
 package iguanaman.iguanatweakstconstruct.replacing;
 
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import iguanaman.iguanatweakstconstruct.reference.Reference;
-import mantle.pulsar.pulse.Handler;
-import mantle.pulsar.pulse.Pulse;
+import slimeknights.mantle.pulsar.pulse.Handler;
+import slimeknights.mantle.pulsar.pulse.Pulse;
 import net.minecraftforge.common.MinecraftForge;
-import tconstruct.library.crafting.ModifyBuilder;
+import slimeknights.tconstruct.library.crafting.ModifyBuilder;
 
 /**
  * Allows the replacement of toolparts.

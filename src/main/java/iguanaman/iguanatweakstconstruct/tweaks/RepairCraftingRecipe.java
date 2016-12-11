@@ -6,10 +6,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
 import net.minecraftforge.oredict.RecipeSorter;
-import tconstruct.library.crafting.ModifyBuilder;
-import tconstruct.library.modifier.ItemModifier;
-import tconstruct.library.tools.ToolCore;
-import tconstruct.modifiers.tools.ModToolRepair;
+import slimeknights.tconstruct.library.crafting.ModifyBuilder;
+import slimeknights.tconstruct.library.modifier.ItemModifier;
+import slimeknights.tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.modifiers.tools.ModToolRepair;
 
 public class RepairCraftingRecipe implements IRecipe {
     static {

@@ -1,7 +1,7 @@
 package iguanaman.iguanatweakstconstruct.restriction;
 
-import cpw.mods.fml.common.eventhandler.Event;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.eventhandler.Event;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import iguanaman.iguanatweakstconstruct.util.TooltipHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -9,16 +9,16 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.oredict.OreDictionary;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.crafting.CastingRecipe;
-import tconstruct.library.crafting.PatternBuilder;
-import tconstruct.library.event.PartBuilderEvent;
-import tconstruct.library.event.SmelteryCastEvent;
-import tconstruct.library.tools.CustomMaterial;
-import tconstruct.library.tools.ToolMaterial;
-import tconstruct.library.util.IPattern;
-import tconstruct.library.util.IToolPart;
-import tconstruct.weaponry.TinkerWeaponry;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.library.crafting.CastingRecipe;
+import slimeknights.tconstruct.library.crafting.PatternBuilder;
+import slimeknights.tconstruct.library.event.PartBuilderEvent;
+import slimeknights.tconstruct.library.event.SmelteryCastEvent;
+import slimeknights.tconstruct.library.tools.CustomMaterial;
+import slimeknights.tconstruct.library.tools.ToolMaterial;
+import slimeknights.tconstruct.library.util.IPattern;
+import slimeknights.tconstruct.library.util.IToolPart;
+import slimeknights.tconstruct.weaponry.TinkerWeaponry;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@ package iguanaman.iguanatweakstconstruct.tweaks.modifiers;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import tconstruct.modifiers.tools.ModFlux;
+import slimeknights.tconstruct.modifiers.tools.ModFlux;
 
 import java.util.ArrayList;
 

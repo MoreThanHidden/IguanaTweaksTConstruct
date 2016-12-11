@@ -1,7 +1,7 @@
 package iguanaman.iguanatweakstconstruct.reference;
 
-import cpw.mods.fml.client.event.ConfigChangedEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.client.event.ConfigChangedEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import iguanaman.iguanatweakstconstruct.leveling.RandomBonuses;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;

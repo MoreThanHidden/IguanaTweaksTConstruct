@@ -1,15 +1,15 @@
 package iguanaman.iguanatweakstconstruct.claybuckets;
 
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import iguanaman.iguanatweakstconstruct.claybuckets.items.ClayBucket;
 import iguanaman.iguanatweakstconstruct.claybuckets.items.ClayBucketMilk;
 import iguanaman.iguanatweakstconstruct.claybuckets.items.ClayBucketTinkerLiquids;
 import iguanaman.iguanatweakstconstruct.reference.Reference;
 import iguanaman.iguanatweakstconstruct.util.Log;
-import mantle.pulsar.pulse.Handler;
-import mantle.pulsar.pulse.Pulse;
+import slimeknights.mantle.pulsar.pulse.Handler;
+import slimeknights.mantle.pulsar.pulse.Pulse;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -21,10 +21,10 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
-import tconstruct.smeltery.TinkerSmeltery;
-import tconstruct.world.TinkerWorld;
+import slimeknights.tconstruct.smeltery.TinkerSmeltery;
+import slimeknights.tconstruct.world.TinkerWorld;
 
-import static tconstruct.smeltery.TinkerSmeltery.*;
+import static slimeknights.tconstruct.smeltery.TinkerSmeltery.*;
 
 @Pulse(id = Reference.PULSE_ITEMS, description = "All the Items Iguana Tweaks for TConstruct adds (Clay Buckets,...)")
 public class IguanaItems {

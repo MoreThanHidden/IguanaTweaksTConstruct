@@ -1,8 +1,8 @@
 package iguanaman.iguanatweakstconstruct.leveling.handlers;
 
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.eventhandler.EventPriority;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import iguanaman.iguanatweakstconstruct.OldToolConversionHandler;
 import iguanaman.iguanatweakstconstruct.leveling.IguanaToolLeveling;
 import iguanaman.iguanatweakstconstruct.leveling.LevelingLogic;
@@ -15,9 +15,9 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
-import tconstruct.items.tools.Hammer;
-import tconstruct.items.tools.Pickaxe;
-import tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.items.tools.Hammer;
+import slimeknights.tconstruct.items.tools.Pickaxe;
+import slimeknights.tconstruct.library.tools.ToolCore;
 
 import java.util.List;
 import java.util.ListIterator;

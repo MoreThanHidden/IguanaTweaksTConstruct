@@ -7,8 +7,8 @@ import net.minecraft.command.WrongUsageException;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.library.tools.ToolCore;
 
 public class IguanaCommandToolXP extends CommandBase {
 

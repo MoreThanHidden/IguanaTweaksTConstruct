@@ -2,10 +2,10 @@ package iguanaman.iguanatweakstconstruct.restriction;
 
 import iguanaman.iguanatweakstconstruct.reference.Reference;
 import iguanaman.iguanatweakstconstruct.util.Log;
-import mantle.utils.ItemMetaWrapper;
+import slimeknights.mantle.utils.ItemMetaWrapper;
 import net.minecraftforge.common.config.Configuration;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.tools.ToolMaterial;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.library.tools.ToolMaterial;
 
 import java.util.HashSet;
 import java.util.Set;

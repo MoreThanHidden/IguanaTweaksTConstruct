@@ -1,18 +1,18 @@
 package iguanaman.iguanatweakstconstruct.restriction;
 
 import iguanaman.iguanatweakstconstruct.util.Log;
-import mantle.utils.ItemMetaWrapper;
+import slimeknights.mantle.utils.ItemMetaWrapper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.crafting.CastingRecipe;
-import tconstruct.library.tools.*;
-import tconstruct.library.util.IToolPart;
-import tconstruct.smeltery.TinkerSmeltery;
-import tconstruct.smeltery.items.MetalPattern;
-import tconstruct.tools.TinkerTools;
-import tconstruct.tools.items.Pattern;
-import tconstruct.weaponry.TinkerWeaponry;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.library.crafting.CastingRecipe;
+import slimeknights.tconstruct.library.tools.*;
+import slimeknights.tconstruct.library.util.IToolPart;
+import slimeknights.tconstruct.smeltery.TinkerSmeltery;
+import slimeknights.tconstruct.smeltery.items.MetalPattern;
+import slimeknights.tconstruct.tools.TinkerTools;
+import slimeknights.tconstruct.tools.items.Pattern;
+import slimeknights.tconstruct.weaponry.TinkerWeaponry;
 
 import java.util.*;
 

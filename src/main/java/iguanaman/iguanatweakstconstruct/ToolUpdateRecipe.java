@@ -6,7 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
 import net.minecraftforge.oredict.RecipeSorter;
-import tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.library.tools.ToolCore;
 
 public class ToolUpdateRecipe implements IRecipe {
     static {
@@ -70,5 +70,12 @@ public class ToolUpdateRecipe implements IRecipe {
     @Override
     public ItemStack getRecipeOutput() {
         return updatedTool;
+    }
+
+
+    //TODO: Check what's needed here
+    @Override
+    public ItemStack[] getRemainingItems(InventoryCrafting inv) {
+        return new ItemStack[0];
     }
 }

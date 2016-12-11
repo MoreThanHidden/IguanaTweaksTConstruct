@@ -1,7 +1,7 @@
 package iguanaman.iguanatweakstconstruct.mobheads.handlers;
 
-import cpw.mods.fml.common.eventhandler.EventPriority;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import iguanaman.iguanatweakstconstruct.IguanaTweaksTConstruct;
 import iguanaman.iguanatweakstconstruct.mobheads.IguanaMobHeads;
 import iguanaman.iguanatweakstconstruct.mobheads.items.IguanaSkull;
@@ -16,8 +16,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.FakePlayer;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
-import tconstruct.library.tools.ToolCore;
-import tconstruct.tools.TinkerTools;
+import slimeknights.tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.tools.TinkerTools;
 
 import java.util.Iterator;
 

@@ -1,9 +1,9 @@
 package iguanaman.iguanatweakstconstruct.leveling.handlers;
 
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.PlayerEvent;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import iguanaman.iguanatweakstconstruct.leveling.LevelingLogic;
 import iguanaman.iguanatweakstconstruct.leveling.LevelingTooltips;
 import iguanaman.iguanatweakstconstruct.leveling.RandomBonuses;
@@ -22,17 +22,17 @@ import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.common.util.FakePlayer;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.player.UseHoeEvent;
-import tconstruct.items.tools.*;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.entity.ProjectileBase;
-import tconstruct.library.event.ToolCraftEvent;
-import tconstruct.library.tools.ToolCore;
-import tconstruct.library.tools.Weapon;
-import tconstruct.library.weaponry.AmmoItem;
-import tconstruct.library.weaponry.ProjectileWeapon;
-import tconstruct.tools.TinkerTools;
-import tconstruct.weaponry.entity.ShurikenEntity;
-import tconstruct.weaponry.weapons.Shuriken;
+import slimeknights.tconstruct.items.tools.*;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.library.entity.ProjectileBase;
+import slimeknights.tconstruct.library.event.ToolCraftEvent;
+import slimeknights.tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.library.tools.Weapon;
+import slimeknights.tconstruct.library.weaponry.AmmoItem;
+import slimeknights.tconstruct.library.weaponry.ProjectileWeapon;
+import slimeknights.tconstruct.tools.TinkerTools;
+import slimeknights.tconstruct.weaponry.entity.ShurikenEntity;
+import slimeknights.tconstruct.weaponry.weapons.Shuriken;
 
 import java.util.Arrays;
 

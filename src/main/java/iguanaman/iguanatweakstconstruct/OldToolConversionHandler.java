@@ -1,7 +1,5 @@
 package iguanaman.iguanatweakstconstruct;
 
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.PlayerEvent;
 import iguanaman.iguanatweakstconstruct.leveling.LevelingLogic;
 import iguanaman.iguanatweakstconstruct.mobheads.IguanaMobHeads;
 import iguanaman.iguanatweakstconstruct.reference.Config;
@@ -12,22 +10,16 @@ import iguanaman.iguanatweakstconstruct.util.Log;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent;
+import slimeknights.tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.library.utils.Tags;
+import slimeknights.tconstruct.tools.TinkerTools;
+import slimeknights.tconstruct.tools.tools.Hammer;
+import slimeknights.tconstruct.tools.tools.Pickaxe;
 
 import java.util.Arrays;
 import java.util.UUID;
-
-import tconstruct.armor.player.TPlayerStats;
-import tconstruct.items.tools.Arrow;
-import tconstruct.items.tools.Hammer;
-import tconstruct.items.tools.Pickaxe;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.tools.AbilityHelper;
-import tconstruct.library.tools.DualMaterialToolPart;
-import tconstruct.library.tools.ToolCore;
-import tconstruct.tools.TinkerTools;
-import tconstruct.util.config.PHConstruct;
-import tconstruct.weaponry.TinkerWeaponry;
-import tconstruct.weaponry.ammo.BoltAmmo;
 
 public class OldToolConversionHandler {
     // todo: re-enable when this stuff is 100% reliable >_<
@@ -83,7 +75,8 @@ public class OldToolConversionHandler {
                 return true;
 
         // check mining level.
-        int realHlvl = TConstructRegistry.getMaterial(tags.getInteger("Head")).harvestLevel();
+        //TODO check this
+        int realHlvl = tags.getInteger(Tags.HARVESTLEVEL);
 
         // unboosted but boost requires -> we need to reduce the hlvl by 1
         if(Config.pickaxeBoostRequired && !LevelingLogic.isBoosted(tags) && (itemStack.getItem() instanceof Pickaxe || itemStack.getItem() instanceof Hammer)) {
@@ -104,7 +97,8 @@ public class OldToolConversionHandler {
         }
 
 
-      // vanilla tcon allows harvestlevel change
+      /* vanilla tcon allows harvestlevel change
+      TODO Confirm this isn't needed in 1.10.2
       if(PHConstruct.miningLevelIncrease)
       {
         // our own diamond modifier is disabled, but vanilla one is there
@@ -119,7 +113,7 @@ public class OldToolConversionHandler {
 
           return false;
       }
-
+      */
 
         return hlvl != realHlvl;
     }

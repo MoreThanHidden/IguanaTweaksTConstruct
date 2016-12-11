@@ -1,15 +1,15 @@
 package iguanaman.iguanatweakstconstruct.restriction;
 
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import iguanaman.iguanatweakstconstruct.IguanaTweaksTConstruct;
 import iguanaman.iguanatweakstconstruct.reference.Reference;
-import mantle.pulsar.pulse.Handler;
-import mantle.pulsar.pulse.Pulse;
+import slimeknights.mantle.pulsar.pulse.Handler;
+import slimeknights.mantle.pulsar.pulse.Pulse;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.world.TinkerWorld;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.world.TinkerWorld;
 
 import java.io.File;
 import java.util.List;

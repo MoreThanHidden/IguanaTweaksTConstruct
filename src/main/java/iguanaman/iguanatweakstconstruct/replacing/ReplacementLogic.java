@@ -15,23 +15,23 @@ import net.minecraft.util.StatCollector;
 
 import java.util.Arrays;
 
-import tconstruct.TConstruct;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.crafting.ModifyBuilder;
-import tconstruct.library.crafting.ToolBuilder;
-import tconstruct.library.crafting.ToolRecipe;
-import tconstruct.library.modifier.ItemModifier;
-import tconstruct.library.tools.DualMaterialToolPart;
-import tconstruct.library.tools.ToolCore;
-import tconstruct.library.tools.ToolMaterial;
-import tconstruct.library.weaponry.IAmmo;
-import tconstruct.modifiers.tools.ModAttack;
-import tconstruct.modifiers.tools.ModButtertouch;
-import tconstruct.modifiers.tools.ModRedstone;
-import tconstruct.tools.TinkerTools;
-import tconstruct.tools.logic.ToolStationLogic;
-import tconstruct.util.config.PHConstruct;
-import tconstruct.weaponry.TinkerWeaponry;
+import slimeknights.tconstruct.TConstruct;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.library.crafting.ModifyBuilder;
+import slimeknights.tconstruct.library.crafting.ToolBuilder;
+import slimeknights.tconstruct.library.crafting.ToolRecipe;
+import slimeknights.tconstruct.library.modifier.ItemModifier;
+import slimeknights.tconstruct.library.tools.DualMaterialToolPart;
+import slimeknights.tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.library.tools.ToolMaterial;
+import slimeknights.tconstruct.library.weaponry.IAmmo;
+import slimeknights.tconstruct.modifiers.tools.ModAttack;
+import slimeknights.tconstruct.modifiers.tools.ModButtertouch;
+import slimeknights.tconstruct.modifiers.tools.ModRedstone;
+import slimeknights.tconstruct.tools.TinkerTools;
+import slimeknights.tconstruct.tools.logic.ToolStationLogic;
+import slimeknights.tconstruct.util.config.PHConstruct;
+import slimeknights.tconstruct.weaponry.TinkerWeaponry;
 
 import static iguanaman.iguanatweakstconstruct.replacing.ReplacementLogic.PartTypes.*;
 

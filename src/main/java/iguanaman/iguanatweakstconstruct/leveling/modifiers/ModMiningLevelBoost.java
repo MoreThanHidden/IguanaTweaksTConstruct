@@ -5,7 +5,7 @@ import iguanaman.iguanatweakstconstruct.reference.Config;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumChatFormatting;
-import tconstruct.modifiers.tools.ModBoolean;
+import slimeknights.tconstruct.modifiers.tools.ModBoolean;
 
 public class ModMiningLevelBoost extends ModBoolean {
     // the maximum mining level obtainable with this head

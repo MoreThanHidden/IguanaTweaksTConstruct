@@ -1,6 +1,6 @@
 package iguanaman.iguanatweakstconstruct.tweaks.handlers;
 
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import iguanaman.iguanatweakstconstruct.leveling.handlers.LevelingToolTipHandler;
 import iguanaman.iguanatweakstconstruct.tweaks.IguanaTweaks;
 import net.minecraft.entity.player.EntityPlayer;

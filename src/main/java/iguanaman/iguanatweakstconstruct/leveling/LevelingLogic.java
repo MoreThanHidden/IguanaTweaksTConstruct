@@ -21,11 +21,11 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import tconstruct.items.tools.*;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.tools.HarvestTool;
-import tconstruct.library.tools.ToolCore;
-import tconstruct.library.tools.Weapon;
+import slimeknights.tconstruct.items.tools.*;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.library.tools.HarvestTool;
+import slimeknights.tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.library.tools.Weapon;
 
 import javax.tools.Tool;
 

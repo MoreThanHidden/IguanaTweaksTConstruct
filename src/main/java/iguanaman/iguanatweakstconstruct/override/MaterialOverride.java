@@ -6,8 +6,8 @@ import iguanaman.iguanatweakstconstruct.util.Log;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.tools.ToolMaterial;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.library.tools.ToolMaterial;
 
 import java.util.HashMap;
 import java.util.Map;

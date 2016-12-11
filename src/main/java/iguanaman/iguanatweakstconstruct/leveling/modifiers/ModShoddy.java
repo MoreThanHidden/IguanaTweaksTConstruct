@@ -4,8 +4,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
-import tconstruct.library.modifier.ItemModifier;
-import tconstruct.modifiers.tools.ModBoolean;
+import slimeknights.tconstruct.library.modifier.ItemModifier;
+import slimeknights.tconstruct.modifiers.tools.ModBoolean;
 
 // Shoddy handles Stonebound and Jagged. Jagged simply is negative Stonebound.
 public class ModShoddy extends ItemModifier {

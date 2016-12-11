@@ -6,9 +6,9 @@ import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
-import tconstruct.library.crafting.ToolBuilder;
-import tconstruct.library.tools.ToolCore;
-import tconstruct.tools.TinkerTools;
+import slimeknights.tconstruct.library.crafting.ToolBuilder;
+import slimeknights.tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.tools.TinkerTools;
 
 import java.util.HashMap;
 import java.util.Map;

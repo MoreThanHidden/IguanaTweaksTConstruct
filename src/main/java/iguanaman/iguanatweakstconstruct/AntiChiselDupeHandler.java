@@ -1,15 +1,10 @@
 package iguanaman.iguanatweakstconstruct;
 
-import net.minecraft.item.ItemStack;
-
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.PlayerEvent;
-import tconstruct.tools.TinkerTools;
-
 public class AntiChiselDupeHandler {
-  @SubscribeEvent
+  /*@SubscribeEvent
   public void onItemCrafted(PlayerEvent.ItemCraftedEvent event)
   {
+    //TODO wait... the chisel was removed from 1.10?
     if(event.crafting  == null || event.crafting.getItem() != TinkerTools.chisel)
       return;
 
@@ -21,4 +16,5 @@ public class AntiChiselDupeHandler {
         event.craftMatrix.setInventorySlotContents(i, null);
     }
   }
+*/
 }

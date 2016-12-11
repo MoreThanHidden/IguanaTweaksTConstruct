@@ -1,7 +1,7 @@
 package iguanaman.iguanatweakstconstruct.mobheads.items;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import iguanaman.iguanatweakstconstruct.mobheads.IguanaMobHeads;
 import iguanaman.iguanatweakstconstruct.reference.Reference;
 import net.minecraft.client.renderer.texture.IIconRegister;

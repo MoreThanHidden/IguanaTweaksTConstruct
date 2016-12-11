@@ -13,9 +13,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.util.FakePlayer;
 import net.minecraftforge.oredict.OreDictionary;
-import tconstruct.library.ActiveToolMod;
-import tconstruct.library.tools.HarvestTool;
-import tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.library.ActiveToolMod;
+import slimeknights.tconstruct.library.tools.HarvestTool;
+import slimeknights.tconstruct.library.tools.ToolCore;
 
 import java.util.Arrays;
 import java.util.List;

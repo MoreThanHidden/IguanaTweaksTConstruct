@@ -1,15 +1,13 @@
 package iguanaman.iguanatweakstconstruct.worldgen;
 
-import cpw.mods.fml.common.event.FMLInitializationEvent;
 import iguanaman.iguanatweakstconstruct.reference.Reference;
 import iguanaman.iguanatweakstconstruct.util.HarvestLevels;
-import mantle.pulsar.pulse.Handler;
-import mantle.pulsar.pulse.Pulse;
-import net.minecraftforge.common.ChestGenHooks;
+import slimeknights.mantle.pulsar.pulse.Pulse;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
 @Pulse(id = Reference.PULSE_WORLDGEN, description = "This module takes care of additional awesome dungeon loot.")
 public class IguanaWorldGen {
-    @Handler
+    //@Handler
     public void init(FMLInitializationEvent event)
     {
         // add some a starting weapon to bonus chests!

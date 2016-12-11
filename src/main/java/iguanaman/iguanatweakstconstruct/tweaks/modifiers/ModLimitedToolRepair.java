@@ -3,7 +3,7 @@ package iguanaman.iguanatweakstconstruct.tweaks.modifiers;
 import iguanaman.iguanatweakstconstruct.reference.Config;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import tconstruct.modifiers.tools.ModToolRepair;
+import slimeknights.tconstruct.modifiers.tools.ModToolRepair;
 
 public class ModLimitedToolRepair extends ModToolRepair {
     @Override

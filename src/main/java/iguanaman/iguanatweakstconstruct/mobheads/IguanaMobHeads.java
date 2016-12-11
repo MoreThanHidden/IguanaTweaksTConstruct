@@ -1,9 +1,9 @@
 package iguanaman.iguanatweakstconstruct.mobheads;
 
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import iguanaman.iguanatweakstconstruct.IguanaTweaksTConstruct;
 import iguanaman.iguanatweakstconstruct.mobheads.blocks.IguanaSkullBlock;
 import iguanaman.iguanatweakstconstruct.mobheads.handlers.MobHeadHandler;
@@ -15,8 +15,8 @@ import iguanaman.iguanatweakstconstruct.mobheads.tileentities.IguanaSkullTileEnt
 import iguanaman.iguanatweakstconstruct.reference.Reference;
 import iguanaman.iguanatweakstconstruct.util.Log;
 import iguanaman.iguanatweakstconstruct.util.ModSupportHelper;
-import mantle.pulsar.pulse.Handler;
-import mantle.pulsar.pulse.Pulse;
+import slimeknights.mantle.pulsar.pulse.Handler;
+import slimeknights.mantle.pulsar.pulse.Pulse;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

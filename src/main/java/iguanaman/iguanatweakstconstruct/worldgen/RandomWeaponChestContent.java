@@ -8,16 +8,16 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.common.ChestGenHooks;
-import tconstruct.items.tools.Battleaxe;
-import tconstruct.items.tools.BowBase;
-import tconstruct.library.TConstructRegistry;
-import tconstruct.library.crafting.ToolBuilder;
-import tconstruct.library.crafting.ToolRecipe;
-import tconstruct.library.tools.ToolCore;
-import tconstruct.library.tools.ToolMaterial;
-import tconstruct.library.tools.Weapon;
-import tconstruct.library.util.IToolPart;
-import tconstruct.tools.TinkerTools;
+import slimeknights.tconstruct.items.tools.Battleaxe;
+import slimeknights.tconstruct.items.tools.BowBase;
+import slimeknights.tconstruct.library.TConstructRegistry;
+import slimeknights.tconstruct.library.crafting.ToolBuilder;
+import slimeknights.tconstruct.library.crafting.ToolRecipe;
+import slimeknights.tconstruct.library.tools.ToolCore;
+import slimeknights.tconstruct.library.tools.ToolMaterial;
+import slimeknights.tconstruct.library.tools.Weapon;
+import slimeknights.tconstruct.library.util.IToolPart;
+import slimeknights.tconstruct.tools.TinkerTools;
 
 import java.util.*;
 

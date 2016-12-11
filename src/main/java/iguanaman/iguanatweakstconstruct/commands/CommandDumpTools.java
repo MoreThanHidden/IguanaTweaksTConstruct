@@ -1,6 +1,6 @@
 package iguanaman.iguanatweakstconstruct.commands;
 
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import iguanaman.iguanatweakstconstruct.util.Log;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
